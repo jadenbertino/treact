@@ -1,0 +1,142 @@
+/* 
+Notes On Website:
+
+font-family: Inter, system-ui
+--tw-text-opacity: 1;
+--tw-bg-opacity: 1;
+logo color: rgb(36, 62, 99) 
+header color: rgb(26 32 44)
+gray color: rgb(124 139 161)
+another gray: rgb(36 62 99);
+purple color: rgb(100 21 255)
+purple hover color: rgb(80 17 204);
+*/
+
+/*
+
+GENERAL -----------------------------
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(26 32 44)
+  /* color: rgb(36, 62, 99) */
+
+} 
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a {
+  line-height: 1.5;
+}
+
+a, a:visited, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  min-width: 0;
+}
+
+.wrapper--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: rgb(100 21 255);
+  padding: 12px 32px; 
+  border-radius: 9999px;
+  overflow: hidden; 
+  border: none;
+  color: rgb(237 242 247);
+  font-weight: 600;
+  font-size: 14px; 
+  transition: background-color 250ms ease-out;
+}
+
+.btn:hover {
+  background-color: rgb(80 17 204);
+}
+
+.ms-48 {
+  margin-left: 48px;
+}
+
+.m-0 {
+  margin: 0;
+}
+/* 
+
+NAV --------------------------
+
+*/
+
+.nav--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.nav__logo--wrapper {
+  width: 40px;
+  margin-right: 12px; 
+}
+
+.nav__logo--text {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-right: 24px;
+  padding-bottom: 4px;
+  color: rgb(36, 62, 99)
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link--list-item {
+  list-style-type: none;
+  margin: 0 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav__link--anchor {
+  color: rgb(36, 62, 99);
+  padding-bottom: 4px;
+  border-bottom: solid 2px transparent; 
+  transition: border-color 250ms ease-out, color 250ms ease-out;
+}
+
+.nav__link--list-item:hover .nav__link--anchor {
+  border-color: rgb(100 21 255); 
+  color: rgb(100 21 255);
+}
