@@ -37,6 +37,20 @@ body {
   padding: 32px; /* small screens? idk it was on the page */
 }
 
+h1, h5 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+h2,
+h4 {
+  color: #243e63
+}
+
 h1,
 h2,
 h3,
@@ -70,10 +84,25 @@ img {
   margin: 0 auto;
 }
 
+.row-sm {
+  max-width: 1024px;
+}
+
 .flex--center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text--center {
+  text-align: center;
 }
 
 .container {
@@ -149,6 +178,7 @@ NAV --------------------------
   margin-right: 24px;
   padding-bottom: 4px;
   color: rgb(36, 62, 99);
+  letter-spacing: 0.6px;
 }
 
 .nav__links {
@@ -168,6 +198,7 @@ NAV --------------------------
   padding-bottom: 4px;
   border-bottom: solid 2px transparent;
   transition: border-color 250ms ease-out, color 250ms ease-out;
+  letter-spacing: 0.35px;
 }
 
 .nav__link--list-item:hover .nav__link--anchor {
@@ -187,7 +218,6 @@ NAV --------------------------
 
 .header__title {
   font-size: 3rem;
-  font-weight: 700;
   line-height: 1.25;
 }
 
@@ -234,7 +264,6 @@ NAV --------------------------
   margin-top: 80px;
   color: #a0aec0;
   font-size: 12px;
-  font-weight: 700;
 }
 
 .header__logo-strip--img {
@@ -250,4 +279,78 @@ NAV --------------------------
 .header__btn {
   padding: 16px 32px;
   font-size: 16px;
+}
+
+/* 
+
+HIGHLIGHTS
+
+*/
+
+.features__container {
+  color: #7c8ba1;
+}
+
+.features__above-title {
+  color:rgb(100 21 255);
+  font-size: 18px;
+  letter-spacing: 1.6px;
+}
+
+.features__title {
+  padding: 16px 0;
+}
+
+.features__sub-title {
+  font-size: 18px;
+  max-width: 580px;
+  line-height: 1.625;
+  color: #7c8ba1;
+}
+
+.features__highlights-list {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .highlight {
+  width: calc(100%/3);
+} */
+
+.highlight--container {
+  width: calc(100%/3);
+  padding: 32px 24px; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.highlight__img--wrapper {
+  padding: 20px;
+  border-radius: 999px;
+  border: solid 1px rgb(226,232,240);
+}
+
+.highlight__img {
+  width: 24px;
+}
+
+.highlight--text-wrapper {
+  margin-left: 16px;
+  margin-top: 8px;
+  text-align: start;
+}
+
+.highlight__title {
+  font-size: 24px;
+}
+
+.highlight__description {
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 2;
+  color: #7c8ba1;
 }
