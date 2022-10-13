@@ -18,24 +18,23 @@ GENERAL -----------------------------
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap");
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: rgb(26 32 44)
+  color: rgb(26 32 44);
   /* color: rgb(36, 62, 99) */
-
-} 
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  padding: 32px;
+  padding: 32px; /* small screens? idk it was on the page */
 }
 
 h1,
@@ -49,7 +48,13 @@ a {
   line-height: 1.5;
 }
 
-a, a:visited, button {
+p {
+  font-size: 18px;
+}
+
+a,
+a:visited,
+button {
   text-decoration: none;
   cursor: pointer;
 }
@@ -59,26 +64,20 @@ img {
   min-width: 0;
 }
 
-.wrapper--center {
+.row {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex--center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn {
-  background-color: rgb(100 21 255);
-  padding: 12px 32px; 
-  border-radius: 9999px;
-  overflow: hidden; 
-  border: none;
-  color: rgb(237 242 247);
-  font-weight: 600;
-  font-size: 14px; 
-  transition: background-color 250ms ease-out;
-}
-
-.btn:hover {
-  background-color: rgb(80 17 204);
+.container {
+  padding: 96px 0;
 }
 
 .ms-48 {
@@ -88,6 +87,45 @@ img {
 .m-0 {
   margin: 0;
 }
+
+.btn {
+  background-color: rgb(100 21 255);
+  border-radius: 9999px;
+  overflow: hidden;
+  border: none;
+  color: rgb(237 242 247);
+  font-weight: 600;
+  transition: background-color 250ms ease-out;
+  padding: 12px 32px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: rgb(80 17 204);
+}
+
+.text--purple {
+  color: rgb(100 21 255);
+}
+
+/* 
+.text--dark-gray {
+  color: #243e63;
+}
+
+.text--medium-gray {
+  color: #4a5568;
+}
+
+.text--gray {
+  color: #7c8ba1;
+}
+
+.text--light-gray {
+  color: #718096;
+} 
+*/
+
 /* 
 
 NAV --------------------------
@@ -98,15 +136,11 @@ NAV --------------------------
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto; 
 }
 
 .nav__logo--wrapper {
   width: 40px;
-  margin-right: 12px; 
+  margin-right: 12px;
 }
 
 .nav__logo--text {
@@ -114,7 +148,7 @@ NAV --------------------------
   font-size: 1.5rem;
   margin-right: 24px;
   padding-bottom: 4px;
-  color: rgb(36, 62, 99)
+  color: rgb(36, 62, 99);
 }
 
 .nav__links {
@@ -132,11 +166,88 @@ NAV --------------------------
 .nav__link--anchor {
   color: rgb(36, 62, 99);
   padding-bottom: 4px;
-  border-bottom: solid 2px transparent; 
+  border-bottom: solid 2px transparent;
   transition: border-color 250ms ease-out, color 250ms ease-out;
 }
 
 .nav__link--list-item:hover .nav__link--anchor {
-  border-color: rgb(100 21 255); 
+  border-color: rgb(100 21 255);
   color: rgb(100 21 255);
+}
+
+/* HEADER */
+
+.header__left--container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.header__description {
+  margin: 32px 0;
+}
+
+.header__input--wrapper {
+  border: 2px solid #e2e8f0;
+  display: inline;
+  border-radius: 999px;
+  padding: 6px 8px;
+  transition: border-color 300ms ease;
+}
+
+.header__input--wrapper:hover {
+  border-color: #cbd5e2;
+}
+
+.header__input--wrapper:focus-within {
+  border-color: rgb(100 21 255);
+}
+
+.header__input--email {
+  border: none;
+  border-width: 0;
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(36, 62, 99);
+  /* padding: 20px 32px; */
+}
+
+.header__input--email:focus {
+  outline-width: 0;
+}
+
+.header__input--email::placeholder {
+  color: #cbd5e2;
+}
+
+.header__logo-strip--text {
+  text-transform: uppercase;
+  margin-top: 80px;
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header__logo-strip--img {
+  margin-top: 16px;
+  opacity: 0.5;
+  padding-right: 128px;
+}
+
+.header__right--container {
+  width: 750px;
+}
+
+.header__btn {
+  padding: 16px 32px;
+  font-size: 16px;
 }
