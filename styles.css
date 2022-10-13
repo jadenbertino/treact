@@ -44,6 +44,8 @@ h1, h5 {
 h2 {
   font-weight: 900;
   font-size: 3rem;
+  letter-spacing: 1.2px;
+  line-height: 1.25;
 }
 
 h2,
@@ -51,19 +53,15 @@ h4 {
   color: #243e63
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-span,
-a {
-  line-height: 1.5;
+h5 {
+  color:rgb(100 21 255);
+  letter-spacing: 1.6px;
+  font-size: 16px;
 }
 
 p {
   font-size: 18px;
+  line-height: 1.625;
 }
 
 a,
@@ -291,12 +289,6 @@ HIGHLIGHTS
   color: #7c8ba1;
 }
 
-.features__above-title {
-  color:rgb(100 21 255);
-  font-size: 18px;
-  letter-spacing: 1.6px;
-}
-
 .features__title {
   padding: 16px 0;
 }
@@ -354,3 +346,31 @@ HIGHLIGHTS
   line-height: 2;
   color: #7c8ba1;
 }
+
+/* 
+
+QUALITY
+
+*/
+.quality--left-container {
+  width: 50%;
+  padding-right: 64px;
+  margin: 32px 0;
+}
+
+.quality--right-container {
+  width: 50%;
+}
+
+.quality__title, .quality__description {
+  margin-top: 16px;
+}
+
+.quality__description {
+  color: #7c8ba1;
+}
+
+.quality__btn {
+  margin-top: 32px;
+}
+
