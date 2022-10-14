@@ -352,6 +352,7 @@ HIGHLIGHTS
 QUALITY
 
 */
+
 .quality--left-container {
   width: 50%;
   padding-right: 64px;
@@ -374,3 +375,53 @@ QUALITY
   margin-top: 32px;
 }
 
+/* 
+
+STEPS
+
+*/
+
+.steps--left-container {
+  width: 50%;
+}
+
+.steps--right-container {
+  margin-left: 64px;
+}
+
+.steps--list-container {
+  margin-top: 48px;
+}
+
+.steps__title {
+  margin-top: 16px;
+}
+
+.step--wrapper {
+  display: flex;
+}
+
+.step--text-wrapper {
+  margin-left: 24px;
+  max-width: 320px;
+}
+
+.step__number {
+  font-size: 36px;
+  color: #cbd5e2;
+  font-weight: 600;
+}
+
+.step__title {
+  font-size: 20px;
+  color: #243e63;
+}
+
+
+
+.step__description {
+  color: #718096;
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 2;
+}
