@@ -33,10 +33,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  padding: 32px; /* small screens? idk it was on the page */
-}
-
 h1,
 h4,
 h5 {
@@ -208,6 +204,7 @@ NAV --------------------------
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px; 
 }
 
 .nav__logo--wrapper {
@@ -830,4 +827,95 @@ CTA
 .cta__btn--transparent:hover {
   background-color: #f7fafc;
   color: rgb(100 21 255);
+}
+
+/*
+
+FOOTER
+
+*/
+
+.footer--container {
+  background-color: rgb(100 21 255);
+}
+
+.col__title,
+.col__link {
+  color: #f7fafc; 
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 64px;
+  border-bottom: solid 2px rgb(116, 44, 255, 0.8);
+  /* margin-top: -48; */
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col__title {
+  margin-bottom: 36px;
+}
+
+.col__link {
+  font-size: 14px; 
+  margin-top: 12px; 
+  line-height: 1.5;
+}
+
+.footer__socials {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials__brand {
+  display: flex;
+  align-items: center;
+}
+
+.socials__logo-img {
+  width: 32px; 
+}
+
+.socials__logo-txt {
+  font-size: 20px;
+  color: #f7fafc;
+  font-weight: 900;
+  margin-left: 8px; 
+}
+
+.socials__copyright {
+  color: #cbd5e2;
+  font-size: 16px; 
+}
+
+.socials__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon {
+  font-size: 16px; 
+  text-align: center;
+}
+
+.socials__btn {
+  padding: 8px; 
+  margin-right: 16px; 
+  width: 32px; 
+  background-color: #f7fafc;
+  border: none;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
