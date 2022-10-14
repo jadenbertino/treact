@@ -100,7 +100,7 @@ img {
   border: none;
   color: rgb(237 242 247);
   font-weight: 600;
-  transition: background-color 250ms ease-out;
+  transition: all 300ms ease;
   padding: 12px 32px;
   font-size: 14px;
 }
@@ -683,20 +683,9 @@ TESTIMONIALS
 }
 
 */
+
 .testimonials--right-container {
   padding-left: 64px;
-}
-
-.testimonials__slides--container {
-  /* border: solid 2px black; */
-  min-width: 576px;
-  min-height: 10px;
-}
-
-
-
-.slide--girl {
-  /* transform: translateX(-100%); */
 }
 
 .testimonials__subtitle {
@@ -781,4 +770,64 @@ TESTIMONIALS
 
 .slide__btn:hover {
   background-color: #e2e8f0;
+}
+
+/* 
+
+CTA
+
+*/
+
+.container--cta {
+  margin-bottom: 96px;
+}
+
+.cta--wrapper {
+  background-color: rgb(100 21 255);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cta--container {
+  padding: 96px 160px; 
+  width: 100%; 
+}
+
+.cta__title {
+  color: #f7fafc;
+  font-size: 30px; 
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.cta__btns--container {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.cta__btn {
+  font-size: 16px; 
+  color: white; 
+  padding: 20px 40px; 
+  margin-right: 32px; 
+}
+
+.cta__btn--orange {
+  background-color: #f56565;
+  border: 0;
+}
+
+.cta__btn--orange:hover {
+  background-color: #e53e3e;
+}
+
+.cta__btn--transparent {
+  border: solid 1px;
+  background-color: none;
+}
+
+.cta__btn--transparent:hover {
+  background-color: #f7fafc;
+  color: rgb(100 21 255);
 }
