@@ -147,31 +147,6 @@ img {
   border-color: rgba(102, 126, 234) !important;
 }
 
-.flex--center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex--col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex--reverse {
-  flex-direction: row-reverse
-}
-
-.text--center {
-  text-align: center;
-}
-
-.text--purple {
-  color: rgb(100 21 255);
-}
-
 .ms-48 {
   margin-left: 48px;
 }
