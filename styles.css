@@ -46,6 +46,7 @@ h2 {
   font-size: 3rem;
   letter-spacing: 1.2px;
   line-height: 1.25;
+  margin-top: 16px;
 }
 
 h2,
@@ -363,7 +364,7 @@ QUALITY
   width: 50%;
 }
 
-.quality__title, .quality__description {
+.quality__description {
   margin-top: 16px;
 }
 
@@ -393,10 +394,6 @@ STEPS
   margin-top: 48px;
 }
 
-.steps__title {
-  margin-top: 16px;
-}
-
 .step--wrapper {
   display: flex;
 }
@@ -417,11 +414,47 @@ STEPS
   color: #243e63;
 }
 
-
-
 .step__description {
   color: #718096;
   font-size: 14px;
   margin-top: 12px;
   line-height: 2;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values--left-container {
+  margin-right: 64px;
+  max-width: calc(50%);
+}
+
+.values__above-title {}
+
+.values__title {}
+
+.values__description {
+  color: #7c8ba1;
+  font-size: 18px;
+  margin-top: 32px;
+}
+
+.value--container {
+  margin-top: 32px;
+  margin-right: 32px; 
+}
+
+.value__icon--wrapper {
+  width: 20px;
+}
+
+.values__btn {
+  margin-top: 48px; 
+}
+
+.values--right-container {
+  max-width: 640px;
 }
