@@ -108,6 +108,9 @@ img {
   transition: all 300ms ease;
   padding: 12px 32px;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
@@ -233,10 +236,10 @@ NAV --------------------------
 .nav__links {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
-.nav__link--list-item {
-  list-style-type: none;
+.nav__link {
   margin: 0 24px;
   font-size: 14px;
   font-weight: 600;
@@ -245,14 +248,27 @@ NAV --------------------------
 .nav__link--anchor {
   color: rgb(36, 62, 99);
   padding-bottom: 4px;
-  border-bottom: solid 2px transparent;
-  transition: border-color 250ms ease-out, color 250ms ease-out;
+  border-bottom: solid 2px rgba(100, 21, 255, 0);
+  /* border-bottom: solid 2px transparent; */
+  transition: all 250ms ease-in;
   letter-spacing: 0.35px;
 }
 
-.nav__link--list-item:hover .nav__link--anchor {
-  border-color: rgb(100 21 255);
-  color: rgb(100 21 255);
+.nav__link:hover .nav__link--anchor {
+  border-bottom: solid 2px rgba(100, 21, 255, 1);
+  color: rgb(100, 21, 255);
+}
+
+.nav__hamburger-btn {
+  border: none;
+  width: 24px;
+  height: 24px;
+  display: none;
+  padding-bottom: 14px;
+}
+
+.nav__hamburger-icon {
+  font-size: 28px;
 }
 
 /* HEADER */
@@ -276,7 +292,7 @@ NAV --------------------------
 
 .header__input--wrapper {
   border: 2px solid #e2e8f0;
-  display: inline;
+  display: flex;
   border-radius: 999px;
   padding: 6px 8px;
   transition: border-color 300ms ease;
@@ -925,11 +941,8 @@ FOOTER
   width: 32px; 
   background-color: #f7fafc;
   border: none;
-  display: flex;
   border-radius: 50%;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -962,18 +975,92 @@ BREAKPOINTS
     align-items: end;
   }
 
-  .header--left-container {
-    max-width: 500px;
-  }
-
   .plan__btn--wrapper {
     padding: 32px 64px;;
   }
 }
 
 @media (max-width: 1023px) {
-  .header--container {
+  
+  .nav__hamburger-btn {
+    display: inline-block;
+  }
+
+  .nav__links { /* menu that pops up on hamburger click */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 64px;
+    background-color: white;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav__link {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .nav__mobile-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header--container, .header--left-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .header--left-container {
+    width: 512px;
+  }
+
+  .header__title {
+    font-size: 1.875rem;
+  }
+
+  .header__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header__logo-strip--wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo-strip--img {
+    padding: 0;
+  }
+
+  .features__highlights--list {
+    width: 800px;
+  }
+
+  .highlight--container {
+    width: 45%;
+  }
+
+  .quality__title, .steps__title, .values__title {
+    font-size: 36px;
+  }
+
+  .quality__description, .values__description {
+    font-size: 16px; 
+  }
+
+  .values--container {
+    flex-direction: column;
+  }
+
+  .plans--container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan--container {
+    width: 384px;
   }
 }
