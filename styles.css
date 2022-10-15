@@ -104,10 +104,9 @@ img {
 
 .container--column {
   width: 50%;
-}
-
-.container--img-col {
-  flex: 0 0 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .ms--64 {
@@ -358,12 +357,13 @@ HEADER
 
 .header__logo-strip--img {
   margin-top: 16px;
+  margin-bottom: 48px;
   opacity: 0.5;
   padding-right: 128px;
 }
 
 .header--right-container {
-  max-width: 750px; 
+  max-width: 750px;
 }
 
 .header__btn {
@@ -387,9 +387,9 @@ HIGHLIGHTS
 
 .features__sub-title {
   font-size: 18px;
-  max-width: 580px;
   line-height: 1.625;
   color: #7c8ba1;
+  max-width: 580px;
 }
 
 .features__highlights-list {
@@ -463,11 +463,8 @@ STEPS
 
 */
 
-.steps--list-container {
-  margin-top: 48px;
-}
-
 .step--wrapper {
+  margin-top: 32px;
   display: flex;
 }
 
@@ -789,13 +786,13 @@ CTA
 }
 
 .cta--container {
-  padding: 96px 32px; 
-  width: 100%; 
+  padding: 96px 32px;
+  width: 100%;
 }
 
 .cta__title {
   color: #f7fafc;
-  font-size: 30px; 
+  font-size: 30px;
   line-height: 1.5;
   max-width: 480px;
 }
@@ -807,10 +804,12 @@ CTA
 }
 
 .cta__btn {
-  font-size: 16px; 
-  color: white; 
-  padding: 20px 40px; 
-  margin-right: 32px; 
+  width: 160px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 40px;
+  margin-right: 32px;
+  white-space: nowrap;
 }
 
 .cta__btn--orange {
@@ -841,19 +840,20 @@ FOOTER
 .footer--container {
   background-color: rgb(100 21 255);
   margin: 0 -32px -32px;
-  padding-left: 64px; 
-  padding-right: 64px; 
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .col__title,
 .col__link {
-  color: #f7fafc; 
+  color: #f7fafc;
 }
 
 .footer__links {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: wrap;
   padding-bottom: 64px;
   border-bottom: solid 2px rgb(116, 44, 255, 0.8);
   /* margin-top: -48; */
@@ -869,8 +869,8 @@ FOOTER
 }
 
 .col__link {
-  font-size: 14px; 
-  margin-top: 12px; 
+  font-size: 14px;
+  margin-top: 12px;
   line-height: 1.5;
 }
 
@@ -887,19 +887,19 @@ FOOTER
 }
 
 .socials__logo-img {
-  width: 32px; 
+  width: 32px;
 }
 
 .socials__logo-txt {
   font-size: 20px;
   color: #f7fafc;
   font-weight: 900;
-  margin-left: 8px; 
+  margin-left: 8px;
 }
 
 .socials__copyright {
   color: #cbd5e2;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 .socials__links {
@@ -909,20 +909,19 @@ FOOTER
 }
 
 .socials__icon {
-  font-size: 16px; 
+  font-size: 16px;
   text-align: center;
 }
 
 .socials__btn {
-  padding: 8px; 
-  margin-right: 16px; 
-  width: 32px; 
+  padding: 8px;
+  margin-right: 16px;
+  width: 32px;
   background-color: #f7fafc;
   border: none;
   border-radius: 50%;
   overflow: hidden;
 }
-
 
 /*
 
@@ -937,15 +936,15 @@ BREAKPOINTS
 
 @media (max-width: 1280px) {
   .header__img {
-    width: 512px; 
+    width: 512px;
   }
 
   .header__title {
-    font-size: 36px; 
+    font-size: 36px;
   }
 
   .header__description {
-    font-size: 16px; 
+    font-size: 16px;
   }
 
   /* .header--container {
@@ -954,17 +953,17 @@ BREAKPOINTS
   } */
 
   .plan__btn--wrapper {
-    padding: 32px 64px;;
+    padding: 32px 64px;
   }
 }
 
 @media (max-width: 1024px) {
-  
   .nav__hamburger-btn {
     display: inline-block;
   }
 
-  .nav__links { /* menu that pops up on hamburger click */
+  .nav__links {
+    /* menu that pops up on hamburger click */
     position: absolute;
     left: 0;
     right: 0;
@@ -985,7 +984,8 @@ BREAKPOINTS
     opacity: 1;
   }
 
-  .header--container, .header--left-container {
+  .header--container,
+  .header--left-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1021,12 +1021,16 @@ BREAKPOINTS
     width: 45%;
   }
 
-  .quality__title, .steps__title, .values__title, .testimonials__title {
+  .quality__title,
+  .steps__title,
+  .values__title,
+  .testimonials__title {
     font-size: 36px;
   }
 
-  .quality__description, .values__description {
-    font-size: 16px; 
+  .quality__description,
+  .values__description {
+    font-size: 16px;
   }
 
   .values--wrapper {
@@ -1044,16 +1048,31 @@ BREAKPOINTS
 
   .cta--container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
+
   .cta__btns--container {
     margin-top: 24px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta__btn {
+    margin: 0 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .highlight__title, .highlight__description {
+  .container--vertical-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .highlight__title,
+  .highlight__description {
     text-align: center;
   }
 
@@ -1066,22 +1085,103 @@ BREAKPOINTS
 
   .container--two-columns {
     flex-direction: column;
-  }
-
-  .quality--right-container {
-    width: 100%;
-  }
-
-  .quality__img, .steps__img, .values__img, .testimonials__img {
     max-width: 448px;
   }
-  
+
+  .container--column {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .column__img {
+    margin-bottom: 64px;
+  }
+
+  .container--column.me--64,
+  .container--column.ms--64 {
+    /* remove margin from two column display */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .plan__price {
     font-size: 36px;
   }
 
+  .step--wrapper {
+    flex-direction: column;
+  }
+
+  .step--text-wrapper {
+    margin-left: 0;
+  }
+
+  .step__title {
+    font-weight: 600;
+    margin-top: 12px;
+  }
+
+  .values__description {
+    font-size: 14px;
+  }
+
+  .value__title--wrapper {
+    justify-content: center;
+  }
+
+  .value__description {
+    /* different than values description */
+    max-width: 320px;
+  }
+
+  .features__sub-title,
+  .quality__description,
+  .step__description .values__description,
+  .pricing__description,
+  .testimonials__subtitle {
+    font-size: 16px;
+  }
+
+  .footer__links {
+    justify-content: start;
+
+  }
+
+  .footer__col {
+    width: calc(100%/3);
+    margin-top: 48px;
+  }
+
+  .footer__socials {
+    flex-direction: column;
+  }
+
+  .socials__copyright, .socials__links {
+    margin-top: 32px;
+  }
+}
+
 /* @media (max-width: 640px) {
   .header__input--wrapper {
     flex-direction: column;
+  }
+
+  .cta__btns--container {
+    flex-direction: column;
+    margin-top: 24px; 
+  }
+
+  .cta__btn:last-child {
+    margin-top: 16px;
+  }
+
+  .footer__links {
+    justify-content: center;
+  }
+
+  .footer__col {
+    width: 120px;
+    margin-top: 48px;
   }
 } */
