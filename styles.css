@@ -29,6 +29,10 @@ GENERAL -----------------------------
   /* color: rgb(36, 62, 99) */
 }
 
+body {
+  padding: 32px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -75,19 +79,24 @@ img {
   min-width: 0;
 }
 
+.container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .row {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+  /* padding-left: 32px;
+  padding-right: 32px; */
 }
 
 .row-sm {
   max-width: 1024px;
 }
 
-.container {
-  padding: 96px 0;
-}
+
 
 .btn {
   background-color: rgb(100 21 255);
@@ -204,7 +213,7 @@ NAV --------------------------
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px; 
+  /* margin-top: 32px;  */
 }
 
 .nav__logo--wrapper {
@@ -248,7 +257,7 @@ NAV --------------------------
 
 /* HEADER */
 
-.header__left--container {
+.header--left-container {
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -312,8 +321,8 @@ NAV --------------------------
   padding-right: 128px;
 }
 
-.header__right--container {
-  width: 750px;
+.header--right-container {
+  max-width: 750px; 
 }
 
 .header__btn {
@@ -837,6 +846,9 @@ FOOTER
 
 .footer--container {
   background-color: rgb(100 21 255);
+  margin: 0 -32px -32px;
+  padding-left: 64px; 
+  padding-right: 64px; 
 }
 
 .col__title,
@@ -918,4 +930,50 @@ FOOTER
   overflow: hidden;
   justify-content: center;
   align-items: center;
+}
+
+
+/*
+
+BREAKPOINTS
+
+1279
+1023
+767
+639
+
+*/
+
+@media (max-width: 1279px) {
+  .header__img {
+    width: 512px; 
+  }
+
+  .header__title {
+    font-size: 36px; 
+  }
+
+  .header__description {
+    font-size: 16px; 
+  }
+
+  .header--container {
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .header--left-container {
+    max-width: 500px;
+  }
+
+  .plan__btn--wrapper {
+    padding: 32px 64px;;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header--container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
