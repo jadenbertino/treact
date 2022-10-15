@@ -79,7 +79,7 @@ img {
   min-width: 0;
 }
 
-.container {
+.container--vertical-padding {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -96,7 +96,27 @@ img {
   max-width: 1024px;
 }
 
+.container--two-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.container--column {
+  width: 50%;
+}
+
+.container--img-col {
+  flex: 0 0 640px;
+}
+
+.ms--64 {
+  margin-left: 64px;
+}
+
+.me--64 {
+  margin-right: 64px;
+}
 
 .btn {
   background-color: rgb(100 21 255);
@@ -133,15 +153,16 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .flex--reverse {
   flex-direction: row-reverse;
 }
 
-.text--center {
+/* .text--center {
   text-align: center;
-}
+} */
 
 .text--purple {
   color: rgb(100 21 255) !important;
@@ -271,7 +292,11 @@ NAV --------------------------
   font-size: 28px;
 }
 
-/* HEADER */
+/* 
+
+HEADER 
+
+*/
 
 .header--left-container {
   width: 45%;
@@ -420,16 +445,6 @@ QUALITY
 
 */
 
-.quality--left-container {
-  width: 50%;
-  padding-right: 64px;
-  margin: 32px 0;
-}
-
-.quality--right-container {
-  width: 50%;
-}
-
 .quality__description {
   margin-top: 16px;
 }
@@ -447,15 +462,6 @@ QUALITY
 STEPS
 
 */
-
-.steps--right-container {
-  width: 50%;
-}
-
-.steps--left-container {
-  margin-left: 64px;
-  width: 50%;
-}
 
 .steps--list-container {
   margin-top: 48px;
@@ -493,17 +499,6 @@ STEPS
 VALUES
 
 */
-
-.values--left-container {
-  margin-right: 64px;
-  max-width: calc(50% - 64px);
-}
-
-.values__above-title {
-}
-
-.values__title {
-}
 
 .values__description {
   color: #7c8ba1;
@@ -562,10 +557,6 @@ VALUES
 
 .values__btn {
   margin-top: 48px;
-}
-
-.values--right-container {
-  max-width: 640px;
 }
 
 /* 
@@ -693,18 +684,9 @@ TESTIMONIALS
 
 */
 
-
-
-.testimonials__img {
+/* .testimonials__img {
   max-width: 640px;
-}
-
-
-
-.testimonials--right-container {
-  padding-left: 64px;
-  max-width: 640px;
-}
+} */
 
 .testimonials__subtitle {
   color: #7c8ba1;
@@ -966,10 +948,10 @@ BREAKPOINTS
     font-size: 16px; 
   }
 
-  .header--container {
+  /* .header--container {
     justify-content: space-between;
     align-items: end;
-  }
+  } */
 
   .plan__btn--wrapper {
     padding: 32px 64px;;
@@ -1082,7 +1064,7 @@ BREAKPOINTS
     width: 50%;
   }
 
-  .quality--container, .steps--container, .values--container, .testimonials--container {
+  .container--two-columns {
     flex-direction: column;
   }
 
