@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/ba6fc831d0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     <title>WORKING</title>
     <!--Free Modern React Templates & Components For Building Landing Pages And
       UI's - Treact-->
@@ -183,7 +184,7 @@
             </figure>
             <div class="container--column me--64">
               <h5 class="quality__above-title">QUALITY WORK</h5>
-              <h2 class="quality__title">
+              <h2 class="section__title">
                 Designed & Developed by
                 <span class="text--purple">Professionals.</span>
               </h2>
@@ -305,7 +306,7 @@
       </section>
       <section id="pricing">
         <div class="container--vertical-padding text--center pricing--container">
-          <div class="row">
+          <div class="row flex--col">
             <div class="pricing--header-container flex--col">
               <h5 class="pricing__above-title">PRICING</h5>
               <h2 class="pricing__title">
@@ -439,17 +440,80 @@
       <section id="faq">
         <div class="container--vertical-padding">
           
-          <div class="row">
+          <div class="row flex--col">
             <h5 class="">FAQS</h5>
             <h2 class="section__title">You have <span class="text--purple">Questions?</span></h2>
             <p class="section__description">And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             
-            <div class="question">
-              <div class="question__title--wrapper">
-                <div class="question__title"></div>
-                <button class="question__btn" onclick="setActive(q1__active)"></button>
+            <div class="questions">
+
+              <div class="question" id="q1" onclick="setActive('q1')">
+                <div class="question__title--wrapper">
+                  <div class="question__title">Are all the templates easily customizable?</div>
+                  <button class="question__btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </div>
+                <p class="question__answer">
+                  Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </div>
-              <div class="question__answer"></div>
+              <div class="question" id="q2" onclick="setActive('q2')">
+                <div class="question__title--wrapper">
+                  <div class="question__title">How long do you usually support a standalone template for?</div>
+                  <button class="question__btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </div>
+                <p class="question__answer">
+                  Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="question" id="q3" onclick="setActive('q3')">
+                <div class="question__title--wrapper">
+                  <div class="question__title">What kind of payment methods do you accept?</div>
+                  <button class="question__btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </div>
+                <p class="question__answer">
+                  Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="question" id="q4" onclick="setActive('q4')">
+                <div class="question__title--wrapper">
+                  <div class="question__title">Is there a subscription service to get the latest templates?</div>
+                  <button class="question__btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </div>
+                <p class="question__answer">
+                  Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="question" id="q5" onclick="setActive('q5')">
+                <div class="question__title--wrapper">
+                  <div class="question__title">Are the templates compatible with React?</div>
+                  <button class="question__btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </div>
+                <p class="question__answer">
+                  Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="question" id="q6" onclick="setActive('q6')">
+                <div class="question__title--wrapper">
+                  <div class="question__title">Do you support Internet Explorer 11?</div>
+                  <button class="question__btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </div>
+                <p class="question__answer">
+                  Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
             </div>
 
           </div>
