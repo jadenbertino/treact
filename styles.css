@@ -126,6 +126,10 @@ SPACING
   margin-right: 64px;
 }
 
+.mt--16 {
+  margin-top: 16px;
+}
+
 .flex--center {
   display: flex;
   align-items: center;
@@ -133,6 +137,7 @@ SPACING
 }
 
 .flex--col {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -156,6 +161,16 @@ REUSABLES
 .section__title {
   font-size: 48px;
   margin: 16px 0;
+}
+
+.section__description {
+  color: #7c8ba1;
+  font-size: 18px;
+  line-height: 1.625
+}
+
+.section__description--container {
+  max-width: 580px;
 }
 
 .btn {
@@ -362,13 +377,6 @@ HIGHLIGHTS
   color: #7c8ba1;
 }
 
-.features__sub-title {
-  font-size: 18px;
-  line-height: 1.625;
-  color: #7c8ba1;
-  max-width: 580px;
-}
-
 .features__highlights-list {
   padding-top: 40px;
   display: flex;
@@ -422,14 +430,6 @@ QUALITY
 
 */
 
-.quality__description {
-  margin-top: 16px;
-}
-
-.quality__description {
-  color: #7c8ba1;
-}
-
 .quality__btn {
   margin-top: 32px;
 }
@@ -477,12 +477,6 @@ STEPS
 VALUES
 
 */
-
-.values__description {
-  color: #7c8ba1;
-  font-size: 18px;
-  margin-top: 16px;
-}
 
 .values--list-container {
   align-items: start;
@@ -542,11 +536,6 @@ VALUES
 PRICING
 
 */
-.pricing__description {
-  margin-top: 16px;
-  color: #7c8ba1;
-  max-width: 576px;
-}
 
 .plans--container {
   display: flex;
@@ -665,11 +654,6 @@ TESTIMONIALS
 /* .testimonials__img {
   max-width: 640px;
 } */
-
-.testimonials__subtitle {
-  color: #7c8ba1;
-  margin-top: 8px;
-}
 
 .testimonials__slides--container {
   margin-top: 40px;
@@ -1099,8 +1083,9 @@ BREAKPOINTS
     width: 45%;
   }
 
-  .quality__description,
-  .values__description {
+  /*.quality__description,
+  .values__description */
+  .section__description {
     font-size: 16px;
   }
 
@@ -1212,10 +1197,6 @@ BREAKPOINTS
     margin-top: 12px;
   }
 
-  .values__description {
-    font-size: 14px;
-  }
-
   .value__title--wrapper {
     justify-content: center;
   }
@@ -1225,11 +1206,14 @@ BREAKPOINTS
     max-width: 320px;
   }
 
-  .features__sub-title,
+  /*.features__sub-title,
   .quality__description,
-  .step__description .values__description,
+  .step__description,
+  .values__description,
   .pricing__description,
-  .testimonials__subtitle {
+  .testimonials__subtitle */
+  
+  .section__description {
     font-size: 16px;
   }
 
