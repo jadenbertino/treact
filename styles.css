@@ -259,6 +259,7 @@ NAV --------------------------
   margin: 0 24px;
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .nav__link--anchor {
@@ -273,6 +274,10 @@ NAV --------------------------
 .nav__link:hover .nav__link--anchor {
   border-bottom: solid 2px rgba(100, 21, 255, 1);
   color: rgb(100, 21, 255);
+}
+
+.nav__close-btn--wrapper {
+  display: none;
 }
 
 .nav__hamburger-btn {
@@ -1032,17 +1037,43 @@ BREAKPOINTS
     padding: 64px;
     background-color: white;
     flex-direction: column;
-    display: none;
+    z-index: 99;
+    /* display: none; */
+  }
+
+  .nav__close-btn--wrapper {
+    display: inline-block;
+    position: absolute;
+    right: 32px;
+    top: 48px;
+  }
+  
+  .nav__close-btn, .nav__close-btn-icon {
+    font-size: 24px;
+    border: none;
+    background-color: 0;
+    color: rgb(36, 62, 99);
+  }
+
+  .nav__links {
+    visibility: hidden;
+    /* opacity: 0; */
+    transform: translateY(-100%);
+    transition: transform 500ms ease;
+    /* transition: opacity 0s 1s; */
+  }
+
+
+  .nav__links.menuActive {
+    visibility: visible;
+    /* opacity: 1; */
+    transform: translateY(-0%);
+
   }
 
   .nav__link {
-    margin: 8px 0;
+    margin: 12px 0;
     font-size: 18px;
-  }
-
-  .nav__mobile-menu {
-    visibility: visible;
-    opacity: 1;
   }
 
   .header--container,
@@ -1212,7 +1243,7 @@ BREAKPOINTS
   .values__description,
   .pricing__description,
   .testimonials__subtitle */
-  
+
   .section__description {
     font-size: 16px;
   }

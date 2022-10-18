@@ -1,4 +1,12 @@
-// ——————
+function openMenu() {
+  let nav = document.getElementsByClassName('nav__links')[0];
+  nav.classList.add("menuActive");
+}
+
+function closeMenu () {
+  let nav = document.getElementsByClassName('nav__links')[0];
+  nav.classList.remove("menuActive");
+}
 
 function setActive(question_num) {
   let question = document.getElementById(question_num);
