@@ -768,6 +768,10 @@ FAQ
   text-align: left;
 }
 
+.question__description {
+  
+}
+
 .question {
   margin-top: 20px; 
   padding: 16px 40px;
@@ -1128,6 +1132,11 @@ BREAKPOINTS
   /* .testimonials--container {
     min-width: 390px;
   } */
+
+  .question__title {
+    font-size: 18px;
+  }
+
   .cta--container {
     flex-direction: column;
     align-items: center;
@@ -1291,6 +1300,14 @@ BREAKPOINTS
     padding: 32px 48px;
   }
 
+  .question {
+    padding: 20px 32px;
+  }
+
+  .question__answer {
+    font-size: 14px;
+  }
+
   .cta__title {
     font-size: 24px;
   }
@@ -1309,6 +1326,7 @@ BREAKPOINTS
   .cta__btn:last-child {
     margin-top: 16px;
   }
+
 
   .footer--container {
     padding-left: 24px;
