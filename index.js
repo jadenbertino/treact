@@ -31,7 +31,17 @@ function setActive(question_num) {
   }
 }
 
-    
+function countdown(n){
+  if (n <= 0) {
+    return []
+  } else {
+    return countdown(n-1) += [n];
+  }
+}
+
+let x = [];
+x.shift()
+console.log()  
   // else {
   //   // if question is not currently focused, then
   //   // 1) unfocus all other questions

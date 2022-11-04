@@ -1,10 +1,10 @@
-/* 
+/*
 Notes On Website:
 
 font-family: Inter, system-ui
 --tw-text-opacity: 1;
 --tw-bg-opacity: 1;
-logo color: rgb(36, 62, 99) 
+logo color: rgb(36, 62, 99)
 header color: rgb(26 32 44)
 gray color: rgb(124 139 161)
 another gray: rgb(36 62 99);
@@ -79,7 +79,7 @@ img {
   min-width: 0;
 }
 
-/* 
+/*
 
 SPACING
 
@@ -152,7 +152,7 @@ SPACING
   text-align: center;
 }
 
-/* 
+/*
 
 REUSABLES
 
@@ -222,7 +222,7 @@ REUSABLES
   margin: 0;
 }
 
-/* 
+/*
 
 NAV --------------------------
 
@@ -292,9 +292,9 @@ NAV --------------------------
   font-size: 28px;
 }
 
-/* 
+/*
 
-HEADER 
+HEADER
 
 */
 
@@ -372,7 +372,7 @@ HEADER
   font-size: 16px;
 }
 
-/* 
+/*
 
 HIGHLIGHTS
 
@@ -429,7 +429,7 @@ HIGHLIGHTS
   color: #7c8ba1;
 }
 
-/* 
+/*
 
 QUALITY
 
@@ -439,7 +439,7 @@ QUALITY
   margin-top: 32px;
 }
 
-/* 
+/*
 
 STEPS
 
@@ -536,7 +536,7 @@ VALUES
   margin-top: 48px;
 }
 
-/* 
+/*
 
 PRICING
 
@@ -650,7 +650,7 @@ PRICING
   margin-left: 32px;
 }
 
-/* 
+/*
 
 TESTIMONIALS
 
@@ -745,7 +745,7 @@ TESTIMONIALS
   background-color: #e2e8f0;
 }
 
-/* 
+/*
 
 FAQ
 
@@ -758,11 +758,11 @@ FAQ
 }
 
 .question__description {
-  
+
 }
 
 .question {
-  margin-top: 20px; 
+  margin-top: 20px;
   padding: 16px 40px;
   border-radius: 8px;
   transition: background-color 300ms ease-out;
@@ -781,13 +781,13 @@ FAQ
 
 .question__title {
   font-size: 20px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .question__answer {
   font-size: 16px;
   line-height: 1.625;
-  margin-top: 16px;
+  margin-top: 0px;
   color: rgb(45 55 72);
   opacity: 0;
   max-height: 0;
@@ -811,8 +811,8 @@ FAQ
   opacity: 1;
   max-height: 10000px;
   animation: toggle__answer 300ms ease;
-  margin-top: 16px;
   transition: opacity 300ms 100ms ease;
+  margin-top: 16px;
 }
 
 @keyframes toggle__answer {
@@ -825,7 +825,7 @@ FAQ
   }
 }
 
-/* 
+/*
 
 CTA
 
@@ -1047,7 +1047,7 @@ BREAKPOINTS
     right: 32px;
     top: 48px;
   }
-  
+
   .nav__close-btn, .nav__close-btn-icon {
     font-size: 24px;
     border: none;
